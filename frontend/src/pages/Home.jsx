@@ -9,14 +9,16 @@ import Stakeholders from '../components/Stakeholders';
 
 const Home = () => {
   return (
-    <div>
+    <div className='w-screen'>
       <Navbar />
-      <Banner />
-      <AboutUs />
-      <Events />
-      <Stakeholders />
-      <Footer />
-      <CopyRight />
+      <div className='mt-16'>
+        <Banner />
+        <AboutUs />
+        <Events />
+        <Stakeholders />
+        <Footer />
+        <CopyRight />
+      </div>
     </div>
   )
 }
