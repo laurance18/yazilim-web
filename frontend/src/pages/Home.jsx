@@ -3,7 +3,7 @@ import AboutUs from '../components/AboutUs';
 import Banner from '../components/Banner';
 import CopyRight from '../components/CopyRight';
 import Events from '../components/Events';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer_1';
 import Navbar from '../components/Navbar';
 import Stakeholders from '../components/Stakeholders';
 
