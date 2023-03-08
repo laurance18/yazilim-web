@@ -27,7 +27,7 @@ const Navbar = () => {
   const [dropdown,setDroprown] = useState(false);
 
   return (
-    <div className=''>
+    <div className='z-10 fixed'>
       <nav className="bg-fuchsia-800 px-5 text-lg h-16 pt-1 drop-shadow-lg fixed w-full">
         <div className="container mx-auto flex justify-between content-center mt-[-4px] ">
           <a href="" className="flex items-center ">
