@@ -3,6 +3,21 @@ import bannerData from './BannerData';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
+
+const Numbers = () => {
+  return (
+    <div className='bg-[#24f24e] h-36 max-w-screen'>
+      <div className='flex container max-w-5xl justify-between mx-auto items-center px-5 h-full'>
+        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
+      </div>
+    </div>
+  )
+}
+
+
 const Banner = () => {
   const banner = bannerData;
   const [index, setIndex] = useState(0);
@@ -17,16 +32,16 @@ const Banner = () => {
     }
   }, [index, banner]);
   
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 3000);
-  //   return () => clearInterval(slider);
-  // }, [index]);
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 10000);
+    return () => clearInterval(slider);
+  }, [index]);
 
   return (
     <section className='z-0'>
-      <div className='flex justify-center max-w-screen h-[40vh] lg:h-[85vh] m-auto relative overflow-x-hidden overflow-y-hidden z-0'>
+      <div className='flex justify-center max-w-screen h-[40vh] lg:h-[85vh] m-auto relative overflow-x-hidden overflow-y-hidden z-0 bg-black'>
         {bannerData.map((data, dataIndex) => {
 
           let position = "translate-x-full opacity-0";
@@ -50,6 +65,8 @@ const Banner = () => {
           </div>
         </div>
       </div>
+
+      <Numbers />
     </section>
   )
 }
