@@ -27,8 +27,8 @@ const Navbar1 = () => {
 
 
   return (
-    <div className={`fixed top-0 w-screen ${height} bg-[#ebf0f0] z-10 transition-all duration-300 ease-linear`}>
-        <nav className='flex justify-between items-center h-full container max-w-8xl px-8 py-2 mx-auto'>
+    <div className={`fixed top-0 w-screen ${height} bg-[#ebf0f0] z-50 transition-all duration-300 ease-linear`}>
+        <nav className='flex justify-between items-center h-full container max-w-9xl px-8 py-2 mx-auto'>
             <div className='flex basis-1/3 h-full items-center'>
                 <img src={navLogo} alt="iss" className='h-full ' />
                 <div className={`flex ${titleFlex} flex-wrap ml-3 font-semibold transition-all duration-300 ease-linear`}>
@@ -37,12 +37,13 @@ const Navbar1 = () => {
                     <p>Topluluğu</p>
                 </div>
             </div>
-            <div className='flex basis-1/3 justify-between'>
+            <div className='flex basis-1/3 justify-between text-sm'>
                 <h3 className='cursor-pointer py-2 px-4 hover:bg-orange-600/10 rounded-xl transition duration-300'>Ana Sayfa</h3>
                 <h3 className='cursor-pointer py-2 px-4 hover:bg-orange-600/10 rounded-xl transition duration-300'>Biz Kimiz?</h3>
                 <h3 className='cursor-pointer py-2 px-4 hover:bg-orange-600/10 rounded-xl transition duration-300'>Etkinlikler</h3>
                 <h3 className='cursor-pointer py-2 px-4 hover:bg-orange-600/10 rounded-xl transition duration-300'>S.S.S.</h3>
                 <h3 className='cursor-pointer py-2 px-4 hover:bg-orange-600/10 rounded-xl transition duration-300'>İletişim</h3>
+                <h3 className='cursor-pointer py-2 px-4 hover:bg-orange-600/10 rounded-xl transition duration-300'>Forum</h3>
             </div>
             <div className='flex basis-1/3 justify-end'>
                 <button className='py-2 px-4 rounded-lg bg-green-500 font-semibold'>

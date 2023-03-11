@@ -3,15 +3,25 @@ import bannerData from './BannerData';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
+import DiscordLogo from "../assets/images/discord-logo-white.png";
+
+
+const Discord = () => {
+  return(
+    <a href='https://discord.gg/DZHsJYZGgs' target="_blank" className='flex justify-center items-center bg-[#5865F2] h-24 hover:bg-[#525ee4] py-6 hover:py-5 transition-all duration-75 ease-linear cursor-pointer'>
+      <img src={DiscordLogo} alt="Discord Logo" className='h-full transition-all duration-200 ease-in cursor-pointer' />
+    </a>
+  )
+}
 
 const Numbers = () => {
   return (
-    <div className='bg-[#24f24e] h-36 max-w-screen'>
+    <div className='bg-gray-700 h-36 max-w-screen'>
       <div className='flex container max-w-5xl justify-between mx-auto items-center px-5 h-full'>
-        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
-        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
-        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
-        <div className='flex items-center hover:bg-[#1bd140] w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
+        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
       </div>
     </div>
   )
@@ -41,7 +51,7 @@ const Banner = () => {
 
   return (
     <section className='z-0'>
-      <div className='flex justify-center max-w-screen h-[40vh] lg:h-[85vh] m-auto relative overflow-x-hidden overflow-y-hidden z-0 bg-black'>
+      <div className='flex justify-center max-w-screen h-[40vh] lg:h-[90vh] m-auto relative overflow-x-hidden overflow-y-hidden z-0 bg-black'>
         {bannerData.map((data, dataIndex) => {
 
           let position = "translate-x-full opacity-0";
@@ -49,7 +59,7 @@ const Banner = () => {
           if (dataIndex === index - 1 || (index === 0 && dataIndex === bannerData.length - 1)) position = "-translate-x-full opacity-0";
 
           return (
-            <div key={data.id} className={`${position} flex-1 absolute top-0 left-0 min-w-full h-[85vh] transition-all duration-300 ease-linear`}>
+            <div key={data.id} className={`${position} flex-1 absolute top-0 left-0 min-w-full h-[90vh] transition-all duration-300 ease-linear`}>
               <img src={data.image} alt="image" className='w-full h-full object-cover'/>
             </div>
           )
@@ -67,6 +77,7 @@ const Banner = () => {
       </div>
 
       <Numbers />
+      <Discord />
     </section>
   )
 }

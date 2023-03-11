@@ -2,7 +2,12 @@ import React from 'react'
 
 const CopyRight = () => {
   return (
-    <div>CopyRight</div>
+    <div className='bg-orange-500 py-1'>
+      <div className='container mx-auto max-w-7xl text-sm px-2 text-gray-100 font-semibold'>
+        © 2023 İYTE Yazılım Topluluğu. Tüm hakları saklıdır.
+        {/* © 2023 Iztech Software Society. All rights reserved. */}
+      </div>
+    </div>
   )
 }
 
