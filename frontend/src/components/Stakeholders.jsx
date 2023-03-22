@@ -6,7 +6,7 @@ import Teknopark from "../assets/TRASH_BIN/teknopark_izmir.png";
 
 const StakeHolder = ({ image, link }) => {
   return(
-    <div className='bg-gray-300 flex items-center justify-center grayscale rounded-sm hover:grayscale-0 transition-all duration-200 ease-linear cursor-pointer'>
+    <div className='bg-gray-300 flex items-center justify-center lg:grayscale rounded-sm hover:grayscale-0 active:bg-gray-500 transition-all duration-200 ease-linear cursor-pointer'>
       <img src={image} alt={image} className='w-32 h-32 object-contain' />
     </div>
   )
@@ -20,7 +20,7 @@ const Stakeholders = () => {
           <h1 className='title text-center text-4xl text-white font-bold cursor-pointer'>Paydaşlarımız</h1>
           <div className='line'></div>
         </div>
-        <div className='grid grid-cols-4 gap-4 w-full'>
+        <div className='grid grid-cols-2 px-3 lg:px-0 lg:py-0 lg:grid-cols-4 gap-4 w-full'>
           <StakeHolder image={Iyte} />
           <StakeHolder image={Teknopark} />
           <StakeHolder image={Cengo} />

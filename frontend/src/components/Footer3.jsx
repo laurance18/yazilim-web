@@ -8,26 +8,34 @@ const Footer = () => {
   return (
     <div className='bg-gray-800'>
         <div className='container max-w-7xl mx-auto py-6 px-2'>
-            <div className='text-white grid grid-cols-4'>
-                <div className='flex flex-col items-center border-r-2 border-white/20 px-2'>
+
+            {/* Top */}
+            <div className='text-white md:grid md:grid-cols-4'>
+
+                {/* Top Col 1 */}
+                <div className='flex flex-col items-center md:border-r-2 md:border-b-0 border-b-2 border-white/20 px-2 pb-4 md:pb-0'>
                     <div className='max-h-64'>
                         <LogoCanvas />
                     </div>
                     <h2 className='my-4 text-md'>İYTE Yazılım Topluluğu</h2>
                     <p className='text-sm text-center'>Incididunt esse excepteur cupidatat nulla cupidatat non nulla labore deserunt eiusmod ipsum ad sunt anim. Laboris anim amet nisi sint proident amet do in eu id aute. Id fugiat laborum velit elit nisi ullamco ut aliquip voluptate in exercitation.</p>
                 </div>
-                <div className='border-r-2 border-white/20 px-2'>
+
+                {/* Top Col 2 */}
+                <div className='md:border-r-2 md:border-b-0 border-b-2 border-white/20 px-2 pt-2 md:pt-0'>
                     <h2 className='font-bold underline text-xl mt-2'>Linkler:</h2>
                     <ul>
-                        <li className='my-5 ml-3'><a href='/'>Ana Sayfa</a></li>
-                        <li className='my-5 ml-3'><a href='/about'>Biz Kimiz?</a></li>
-                        <li className='my-5 ml-3'><a href='/events'>Etkinlikler</a></li>
-                        <li className='my-5 ml-3'><a href='/sss'>Sıkça Sorulan Sorular</a></li>
-                        <li className='my-5 ml-3'><a href='/contacts'>İletişim</a></li>
-                        <li className='my-5 ml-3'><a href='/'>Forum</a></li>
+                        <li className='my-5 ml-3 underline md:no-underline'><a href='/'>Ana Sayfa</a></li>
+                        <li className='my-5 ml-3 underline md:no-underline'><a href='/about'>Biz Kimiz?</a></li>
+                        <li className='my-5 ml-3 underline md:no-underline'><a href='/events'>Etkinlikler</a></li>
+                        <li className='my-5 ml-3 underline md:no-underline'><a href='/sss'>Sıkça Sorulan Sorular</a></li>
+                        <li className='my-5 ml-3 underline md:no-underline'><a href='/contacts'>İletişim</a></li>
+                        <li className='my-5 ml-3 underline md:no-underline'><a href='/'>Forum</a></li>
                     </ul>
                 </div>
-                <div className='border-r-2 border-white/20 px-2'>
+
+                {/* Top Col 3 */}
+                <div className='md:border-r-2 md:border-b-0 border-b-2 border-white/20 px-2'>
                     <h2 className='font-bold underline text-xl mt-2'>Sosyal Medya:</h2>
                     <div>
                         <div className='my-5 ml-3'><a href="https://www.instagram.com/iyte_yazilim/" target="_blank" rel="noreferrer" className='text-gray-400 hover:text-gray-500 flex items-center'>
@@ -63,24 +71,34 @@ const Footer = () => {
 
                     </div>
                 </div>
+
+                {/* Top Col 4 */}
                 <div className='px-2'>
                     <h2 className='font-bold underline text-xl mt-2 text-center'>Discord Sunucumuza Katıl</h2>
                     <div className='flex flex-col items-center'>
                         <img src={DiscordLogo} alt="Discord" className='w-3/5 my-4' />
-                        <button className='bg-[#5865F2] hover:bg-[#525ee4]  transition-colors duration-150 ease-linear p-3 rounded-lg'>İYTE Yazılım Topluluğu</button>
+                        <button className='bg-[#5865F2] hover:bg-[#525ee4] transition-colors duration-150 ease-linear p-3 rounded-lg'>İYTE Yazılım Topluluğu</button>
                     </div>
                 </div>
             </div>
+
             <br />
             <hr />
             <br />
-            <div className='grid grid-cols-3 gap-3 w-full'>
-                <div className='h-[50vh]'>
+            
+            {/* Bottom */}
+            <div className='md:grid md:grid-cols-3 md:gap-3 w-full'>
+                
+                {/* Spotify */}
+                <div className='h-[170px] md:h-[40vh] lg:h-[50vh]'>
                     <iframe title='Spotify' style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/2PNOuzyhwcMRYXt7x0cxEY?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-                <div className='col-span-2 h-[50vh]'>
+
+                {/* Map */}
+                <div className='md:col-span-2 h-[250px] md:h-[40vh] lg:h-[50vh]'>
                     <iframe title='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12521.16346442361!2d26.63019863189723!3d38.3190947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bb90f9aaaaaaab%3A0xed70c1a0fe6503c9!2zxLB6bWlyIFnDvGtzZWsgVGVrbm9sb2ppIEVuc3RpdMO8c8O8IMSwWVRF!5e0!3m2!1str!2str!4v1678538954771!5m2!1str!2str" width="100%" height="100%" style={{ border:0, borderRadius: "12px" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+
             </div>
         </div>
     </div>

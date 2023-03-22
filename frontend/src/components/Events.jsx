@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Event = ({ title, image, miniDesc, url, eventStyle}) => {
   return (
-    <div className={`${eventStyle} bg-yellow-500 max-h-96 h-96 rounded-md p-2`}>
+    <div className={`${eventStyle} bg-yellow-500 max-h-96 lg:h-96 h-80 rounded-md p-2 my-2 lg:my-0`}>
       {title}
     </div>
   )
@@ -18,7 +18,7 @@ const Events = () => {
           <h1 className='title text-center text-4xl font-bold cursor-pointer'>Etkinlikler</h1>
           <div className='line'></div>
         </div>
-        <div className='grid grid-cols-3 gap-4 w-full'>
+        <div className='px-3 lg:px-0 lg:grid lg:grid-cols-3 gap-4 w-full'>
           <Event title={"Python Eğitimi"} />
           <Event title={"GitHub Eğitimi"} />
           <Event title={"Docker Eğitimi"} />

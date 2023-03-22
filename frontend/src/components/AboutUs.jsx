@@ -21,7 +21,7 @@ const AboutUs = () => {
         </div>
 
         {/* Content */}
-        <div className='text-center'>
+        <div className='text-center lg:text-lg text-xs'>
           <p className='mt-8 text-white'>IYTE Yazılım Topluluğu 2011'de kurulmuş Bilgisayar Mühendisliği topluluğudur. Incididunt deserunt mollit ut eu eiusmod aliqua qui est est. Minim incididunt in exercitation eu. Adipisicing dolore quis ipsum anim tempor culpa mollit mollit magna. Laborum officia reprehenderit sunt duis non in incididunt occaecat sint sunt non veniam Lorem. In pariatur minim cupidatat reprehenderit aute amet aute do. Nisi magna consequat ut mollit elit id cupidatat veniam proident nulla et sint adipisicing. Duis magna incididunt in sint non Lorem enim minim dolor commodo labore.</p>
         </div>
       </div>

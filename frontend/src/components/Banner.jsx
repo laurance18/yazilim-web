@@ -11,23 +11,39 @@ import DiscordLogo from "../assets/images/discord-logo-white.png";
 
 const Discord = () => {
   return(
-    <a href='https://discord.gg/DZHsJYZGgs' target="_blank" rel="noreferrer" className='flex justify-center items-center bg-[#5865F2] h-24 hover:bg-[#525ee4] py-6 hover:py-5 transition-all duration-75 ease-linear cursor-pointer'>
+    <a href='https://discord.gg/DZHsJYZGgs' target="_blank" rel="noreferrer" className='flex justify-center items-center bg-[#5865F2] h-16 md:h-24 hover:bg-[#525ee4] py-4 md:py-6 active:py-3 md:hover:py-5 transition-all duration-75 ease-linear cursor-pointer'>
       <img src={DiscordLogo} alt="Discord Logo" className='h-full transition-all duration-200 ease-in cursor-pointer' />
     </a>
   )
 }
 
 const Numbers = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [size, setSize] = useState(60);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    if (width < "1024") {
+      setSize(35);
+    }
+    else {
+      setSize(60);
+    }
+  }, [width, size]);
   return (
-    <div className='bg-gray-700 h-36 max-w-screen'>
+    <div className='bg-gray-700 h-20 lg:h-36 max-w-screen'>
       <div className='flex container max-w-5xl justify-between mx-auto items-center px-5 h-full'>
         <div className='flex flex-col items-center hover:bg-gray-800 w-full h-full justify-center text-white'>
-          <PeopleIcon sx={{ fontSize: 60 }} />
+          <PeopleIcon sx={{ fontSize: size }} />
           <p className='font-bold cursor-default'>956</p>
         </div>
-        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
-        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
-        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
+        <div className='flex flex-col items-center hover:bg-gray-800 w-full h-full justify-center text-white'>
+          <PeopleIcon sx={{ fontSize: size }} />
+          <p className='font-bold cursor-default'>956</p>
+        </div>
+        <div className='flex flex-col items-center hover:bg-gray-800 w-full h-full justify-center text-white'>
+          <PeopleIcon sx={{ fontSize: size }} />
+          <p className='font-bold cursor-default'>956</p>
+        </div>
       </div>
     </div>
   )
@@ -57,7 +73,7 @@ const Banner = () => {
 
   return (
     <section className='z-0'>
-      <div className='flex justify-center max-w-screen h-[40vh] lg:h-[90vh] m-auto relative overflow-x-hidden overflow-y-hidden z-0 bg-black'>
+      <div className='flex justify-center max-w-screen h-[90vh] m-auto relative overflow-x-hidden overflow-y-hidden z-0 bg-black'>
         {bannerData.map((data, dataIndex) => {
 
           let position = "translate-x-full opacity-0";

@@ -14,12 +14,12 @@ import Logo from "../assets/images/logo-colorful.png";
 const Social = ({ image, alt, link, text }) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <div className='h-[10vw] min-h-[10vh] cursor-pointer grayscale hover:grayscale-0 transition-all duration-200 ease-in'>
+      <div className='h-[10vw] min-h-[12vh] cursor-pointer grayscale hover:grayscale-0 transition-all duration-200 ease-in'>
         <img src={image} alt="social" className='w-full h-full object-cover relative z-0' />
       </div>
-      <div className='absolute z-10 -mt-8 ml-4 text-white flex items-center h-6 grayscale-0 cursor-default'>
-        <img src={Logo} alt="issLogo" className='h-full mr-2' />
-        <p className='text-sm'>{text}</p>
+      <div className='absolute z-10 sm:-mt-8 -mt-7 sm:ml-4 ml-2 text-white flex items-center h-6 grayscale-0 cursor-default'>
+        <img src={Logo} alt="issLogo" className='h-full sm:mr-2 mr-1' />
+        <p className='sm:text-sm text-xs'>{text}</p>
       </div>
     </a>
   )
@@ -27,7 +27,7 @@ const Social = ({ image, alt, link, text }) => {
 
 const SocialLinks = () => {
   return (
-    <div className='flex flex-col max-w-4xl mx-auto mb-12'>
+    <div className='flex flex-col xl:max-w-4xl max-w-screen mx-auto mb-12 px-3'>
       <h1 className='text-center my-12 text-4xl font-semibold'>Bizi Takip Edin</h1>
       <div className='grid grid-cols-2'>
         <Social image={Discord} alt="Discord" text="İYTE Yazılım Topluluğu" link="https://discord.gg/DZHsJYZGgs" />
