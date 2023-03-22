@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Event = ({ title, image, miniDesc, url, style}) => {
+const Event = ({ title, image, miniDesc, url, eventStyle}) => {
   return (
-    <div className={`${style} bg-yellow-500 max-h-96 h-96 rounded-md p-2`}>
+    <div className={`${eventStyle} bg-yellow-500 max-h-96 h-96 rounded-md p-2`}>
       {title}
     </div>
   )
@@ -22,10 +22,10 @@ const Events = () => {
           <Event title={"Python Eğitimi"} />
           <Event title={"GitHub Eğitimi"} />
           <Event title={"Docker Eğitimi"} />
-          <Event title={"Code Night"} style={"col-span-2"} />
+          <Event title={"Code Night"} eventStyle={"col-span-2"} />
           <Event title={"Oyun Geliştirme Eğitimi"} />
           <Event title={"Oyun Geliştirme Eğitimi"} />
-          <Event title={"Genç İzmir Dijital Akademi"} style={"col-span-2"} />
+          <Event title={"Genç İzmir Dijital Akademi"} eventStyle={"col-span-2"} />
         </div>
       </div>
     </div>

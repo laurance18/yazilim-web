@@ -11,7 +11,7 @@ import DiscordLogo from "../assets/images/discord-logo-white.png";
 
 const Discord = () => {
   return(
-    <a href='https://discord.gg/DZHsJYZGgs' target="_blank" className='flex justify-center items-center bg-[#5865F2] h-24 hover:bg-[#525ee4] py-6 hover:py-5 transition-all duration-75 ease-linear cursor-pointer'>
+    <a href='https://discord.gg/DZHsJYZGgs' target="_blank" rel="noreferrer" className='flex justify-center items-center bg-[#5865F2] h-24 hover:bg-[#525ee4] py-6 hover:py-5 transition-all duration-75 ease-linear cursor-pointer'>
       <img src={DiscordLogo} alt="Discord Logo" className='h-full transition-all duration-200 ease-in cursor-pointer' />
     </a>
   )
@@ -66,7 +66,7 @@ const Banner = () => {
 
           return (
             <div key={data.id} className={`${position} flex-1 absolute top-0 left-0 min-w-full h-[90vh] transition-all duration-300 ease-linear`}>
-              <img src={data.image} alt="image" className='w-full h-full object-cover'/>
+              <img src={data.image} alt={data.id} className='w-full h-full object-cover'/>
             </div>
           )
         })}

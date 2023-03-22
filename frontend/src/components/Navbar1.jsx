@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import navLogo from "../img/nav-logo.png";
-import navLogo1 from "../assets/images/logo-colorful.png";
 import navLogo2 from "../assets/images/a.png";
 
 import { useNavigate } from 'react-router-dom';
 
-import PowerIcon from '@mui/icons-material/Power';
 
 const Navbar1 = () => {
     const [scrollY, setScrollY] = useState(window.scrollY);
@@ -26,7 +23,7 @@ const Navbar1 = () => {
             setTitleFlex("text-[12px]");
         }
 
-    });
+    }, [scrollY]);
 
     const navigation = useNavigate();
 

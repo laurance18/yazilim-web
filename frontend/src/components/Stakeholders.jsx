@@ -7,7 +7,7 @@ import Teknopark from "../assets/TRASH_BIN/teknopark_izmir.png";
 const StakeHolder = ({ image, link }) => {
   return(
     <div className='bg-gray-300 flex items-center justify-center grayscale rounded-sm hover:grayscale-0 transition-all duration-200 ease-linear cursor-pointer'>
-      <img src={image} alt="image" className='w-32 h-32 object-contain' />
+      <img src={image} alt={image} className='w-32 h-32 object-contain' />
     </div>
   )
 }

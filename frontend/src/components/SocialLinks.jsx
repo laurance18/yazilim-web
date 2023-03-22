@@ -13,7 +13,7 @@ import Logo from "../assets/images/logo-colorful.png";
 
 const Social = ({ image, alt, link, text }) => {
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       <div className='h-[10vw] min-h-[10vh] cursor-pointer grayscale hover:grayscale-0 transition-all duration-200 ease-in'>
         <img src={image} alt="social" className='w-full h-full object-cover relative z-0' />
       </div>
