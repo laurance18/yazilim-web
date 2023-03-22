@@ -50,3 +50,21 @@ code {
 .bannerOn {
   animation: bannerup 0.3s ease-in;
 }
+
+
+.line {
+  width: calc(100% + 20px);
+  height: 50px;
+  border: 5px solid black;
+  background-clip: padding-box;
+  border-color: #ff534f transparent transparent transparent;
+  border-radius: 50% 100px 0px 0px;
+
+  transition: all 0.3s ease;
+}
+
+
+.title:hover + .line {
+  width: 100%;
+  border-radius: 0px;
+}

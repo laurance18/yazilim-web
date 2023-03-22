@@ -2,7 +2,8 @@ import { Suspense, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, Stage, useGLTF } from '@react-three/drei';
 import { HemisphereLight, PointLight, SpotLight } from 'three';
-import Model from './IssLogo';
+// import Model from './IssLogo';
+import Model from "./Iss";
 
 import { CanvasLoader } from '../Loader';
 

@@ -1,12 +1,20 @@
 import React from "react";
 import Home from "./pages/Home";
+import SSS from "./pages/SSS";
+
+import { Route, Routes } from "react-router-dom";
+import AboutUs from "./pages/AboutUs";
+import Events from "./pages/Events";
 
 function App() {
   return (
-    <div id="background" className="min-h-screen w-full flex justify-center">
-      {/* <h1 className="w-fit h-fit border-2 border-blue-600 text-4xl font-bold">Hello Guys!</h1> */}
-      <Home />
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/sss" element={<SSS />} />
+      <Route path="/about" element={<AboutUs />} />
+      <Route path="/events" element={<Events />} />
+      
+    </Routes>
   );
 }
 

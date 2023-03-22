@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import bannerData from './BannerData';
+
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import PeopleIcon from '@mui/icons-material/People';
 
 import DiscordLogo from "../assets/images/discord-logo-white.png";
+
 
 
 const Discord = () => {
@@ -18,7 +21,10 @@ const Numbers = () => {
   return (
     <div className='bg-gray-700 h-36 max-w-screen'>
       <div className='flex container max-w-5xl justify-between mx-auto items-center px-5 h-full'>
-        <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
+        <div className='flex flex-col items-center hover:bg-gray-800 w-full h-full justify-center text-white'>
+          <PeopleIcon sx={{ fontSize: 60 }} />
+          <p className='font-bold cursor-default'>956</p>
+        </div>
         <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
         <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>
         <div className='flex items-center hover:bg-gray-800 w-full h-full justify-center'>as</div>

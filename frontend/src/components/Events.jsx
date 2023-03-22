@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Event = ({ title, image, miniDesc, url, style}) => {
   return (
@@ -9,11 +10,15 @@ const Event = ({ title, image, miniDesc, url, style}) => {
 }
 
 const Events = () => {
+  const navigation = useNavigate();
   return (
     <div className='bg-white py-4'>
-      <div className='container max-w-4xl mx-auto flex justify-center flex-col'>
-        <h1 className='text-center text-4xl font-semibold my-12'>Etkinlikler</h1>
-        <div className='grid grid-cols-3 gap-4'>
+      <div className='container max-w-4xl mx-auto flex justify-center flex-col items-center'>
+        <div onClick={() => navigation("/events")} className='my-12'>
+          <h1 className='title text-center text-4xl font-bold cursor-pointer'>Etkinlikler</h1>
+          <div className='line'></div>
+        </div>
+        <div className='grid grid-cols-3 gap-4 w-full'>
           <Event title={"Python Eğitimi"} />
           <Event title={"GitHub Eğitimi"} />
           <Event title={"Docker Eğitimi"} />

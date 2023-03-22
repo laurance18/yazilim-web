@@ -15,9 +15,12 @@ const StakeHolder = ({ image, link }) => {
 const Stakeholders = () => {
   return (
     <div className='bg-gray-800 py-4'>
-      <div className='flex flex-col justify-center container max-w-4xl mx-auto'>
-        <h1 className='text-center text-4xl text-white font-semibold my-12'>Paydaşlarımız</h1>
-        <div className='grid grid-cols-4 gap-4'>
+      <div className='flex flex-col justify-center container max-w-4xl mx-auto items-center'>
+        <div className='my-12'>
+          <h1 className='title text-center text-4xl text-white font-bold cursor-pointer'>Paydaşlarımız</h1>
+          <div className='line'></div>
+        </div>
+        <div className='grid grid-cols-4 gap-4 w-full'>
           <StakeHolder image={Iyte} />
           <StakeHolder image={Teknopark} />
           <StakeHolder image={Cengo} />
